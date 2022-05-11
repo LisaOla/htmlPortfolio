@@ -8,66 +8,31 @@
         <h1 id="heading1">
             BioStaden - Göteborg</h1>
         <p class="subtitle">
-            <span>Movies for allt </span>
+            <span>MOVIES FOR ALL </span>
 
         </p>
-        <!-- <p>Funkar för hela famil</p> -->
-    <!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+
+
+    </body>
+    
     <div class="topnav">
-        <a class="active" href="#home">Hem</a>
+        <a class="home" href="#hem">Hem</a>
         <a href="#films">Film</a>
-        <a href="#contact">Contact Os</a>
+        <a href="#contactus">Kontakta Oss</a>
     </div>
 
 
     <div class="row" id="films">
         <div class="leftcolumn">
           <div class="card">
-            <h2>Lord Of The Rings</h2>
-            <h5>The Lord of the Rings is an epic high-fantasy novel by English author and scholar JRR</h5>
+            <h1>Lord Of The Rings</h2>
+            <h2>The Lord of the Rings is an epic high-fantasy novel by English author and scholar JRR</h5>
             <div class="galary" style="height:500px; width: 100px;"><img src="img/lordoftherings.jpeg" alt="news1" width="400" height="400"></div>
             <p>A select mob and his loyal companions take on the task of destroying The Only Ring, and destroying together with the wizard Gandalf, dwarves, elves and humans, Sauron, the ruler of darkness in Mordor.</p>
           </div>
-          <div class="card">
-            <h2>Hobbit</h2>
-            <h5>Hobbit is a film trilogy based on JRR Tolkien's novel Bilbo - A Hobbit's Adventure from 1937. The first film, Hobbit: An Unexpected Journey, had its cinema premiere on December 12, 2012, the second, Hobbit: Smaug's Wilderness, had on December 11, 2013 and the third , Hobbit: Femhäraslaget, had on December 9, 2014</h5>
+          <div class="card">mo
+            <h1>Hobbit</h2>
+            <h2>Hobbit is a film trilogy based on JRR Tolkien's novel Bilbo - A Hobbit's Adventure from 1937. The first film, Hobbit: An Unexpected Journey, had its cinema premiere on December 12, 2012, the second, Hobbit: Smaug's Wilderness, had on December 11, 2013 and the third , Hobbit: Femhäraslaget, had on December 9, 2014</h5>
             <div class="galary" style="height:500px; width: 100px;"><img src="img/hobbit.jpeg" alt="news2" width="400" height="400"></div>
             <p>Bilbo Baggins (Martin Freeman) lives a simple life with his fellow hobbits in the shire, until the wizard Gandalf (Ian McKellen) arrives and convinces him to join a group of dwarves on a quest to reclaim the kingdom of Erebor. The journey takes Bilbo on a path through treacherous lands swarming with orcs, goblins and other dangers, not the least of which is an encounter with Gollum (Andy Serkis) and a simple gold ring that is tied to the fate of Middle Earth in ways Bilbo cannot even fathom..</p>
           </div>
@@ -75,24 +40,61 @@
         <div class="rightcolumn">
             <div class="card">
                 <h3>Galary Images</h3>
-                <div class="galary"><img src="img/nature1.jpeg" alt="nature 1" width="400" height="400"></div><br>
-                <div class="galary"><img src="img/nature2.jpeg" alt="nature2" width="400" height="400"></div><br>
-                <div class="galary"><img src="img/nature3.jpeg" alt="nature3" width="400" height="400"></div>
+                <div class="galary"><img src="img/galary1.jpg" alt="nature 1" width="400" height="400"></div><br>
+                <div class="galary"><img src="img/galary2.jpeg" alt="nature2" width="400" height="400"></div><br>
+                <div class="galary"><img src="img/galary3.jpeg" alt="nature3" width="400" height="400"></div>
               </div>
         </div>
       </div>
 
-      
-      <div class="container" id="contact">
+    <!-- Kontakt form -->
+
+    <div class="container" id="contactus">
+      <div style="text-align: center">
+        <h2>Kontakta Oss</h2>
+        <p>Lämna dina medellande</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">Förnamn:</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Ditt namn.."
+            />
+            <label for="lname">Efternamn:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Ditt efternamn.."
+            />
+
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Skriv Ditt Meddelande.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Skicka" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontakt form slut -->
+      <!-- <div class="container" id="contact">
         <div style="text-align:center">
-          <h2>Contact Us</h2>
-          <p>Swing by for a cup of coffee, or leave us a message:</p>
+          <h2>Kontakt Oss</h2>
+          <p>Skriv ditt msg</p>
         </div>
         <div class="row">
-          <div class="column">
-            <img src="img/swedenmap.jpeg" style="width:50%" >
+          <div class="swedenMap">
+            <img style="height:700px; width: 700px;" src="img/swedenmap.jpeg" style="width:40%" >
           </div>
-          <div class="column" style="width: 50%">
+          <div class="contactUsForm" style="width: 30%">
             <form action="/action_page.php">
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -110,10 +112,10 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
 
     <div class="footer">
-        <h2>Copyright,Daily-News , 2022 </h2>
+        <h2>Copyright,BioStaden , 2022 </h2>
     </div>
 
       <!-- <div class="container" id="#contact">
@@ -156,10 +158,3 @@
   
   <body>
     <h1> Welcome to my Portfolio
-  <!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets 
