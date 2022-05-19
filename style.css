@@ -18,14 +18,6 @@
   /* margin: 0.5em 1em 1em 0; 
   margin: 0.5em 1em; */
 }
-.subtitle {
-  background-image: url(./img/banner.jpg);  
-  color: rgb(231, 232, 238);
-  font-size: 2em;
-  margin-top: -1em;
-  text-decoration:  firebrick;
-  text-align: center;
-}
 
 
 .topnav {
