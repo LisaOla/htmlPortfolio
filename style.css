@@ -1,37 +1,14 @@
 
-
-
-/* h1{
-    color: rgb(186, 22, 22);
-    font-size: 1.5em;
-
-} */
-/* p{
-    color: rgb(13, 255, 0);
-    font-size: 1em;
-    margin-top: -0.5em;
-    text-decoration: underline;
-    text-align: center;
-} */
 #body {
   background-color: white;
 }
-.subtitle {
-  background-image: url(./img/banner.jpg);  
-  color: rgb(231, 232, 238);
-  font-size: 5em;
-  margin-top: -0.5em;
-  text-decoration:  firebrick;
-  text-align: center;
-}
-#heading1 {
+.header {
   background-image: url(./img/moviesBanner.jpeg);  
   color: rgb(242, 236, 236);
   background-color: #d21ee7da;
-  border-color: red;
-  font-size: 5em;
+  font-size: 2.5em;
   text-align: center;
-  padding: 2% 2% 2% 2%;
+  padding: 1% 1% 1% 1%;
   /* 
   margin-top: 1em;
   margin-left: 1em;
@@ -41,11 +18,21 @@
   /* margin: 0.5em 1em 1em 0; 
   margin: 0.5em 1em; */
 }
+.subtitle {
+  background-image: url(./img/banner.jpg);  
+  color: rgb(231, 232, 238);
+  font-size: 2em;
+  margin-top: -1em;
+  text-decoration:  firebrick;
+  text-align: center;
+}
 
-/* Add a black background color to the top navigation */
+
 .topnav {
   background-color: #333;
   overflow: hidden;
+  margin-top: -3.5em;
+
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -68,96 +55,40 @@
 }
 
 
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
+.main-section {
   float: left;
-  width: 74%;
+  width: 70%;
 }
-
-/* Right column */
-.rightcolumn {
+.aside {
   float: right;
   width: 25%;
-  padding-left: 20px;
 }
 
-/* Fake image */
-.galary {
+.commingmovie {
   background-color: white;
   width: 100%;
 }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 1px;
-  margin-top: 1px;
-}
 
 
-
-.card p {
-  font-size: 2em;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-  /* Kontakt form stil */
+  /* Kontakt form */
 
   input[type=text], select, textarea, input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
   }
   
   input[type=submit] {
-    background-color: #007cb4;
+    background-color: #170f54;
     color: white;
-    padding: 12px 30px;
-    border: none;
+    padding: 10px 20px;
     
    
   }
-  
-  input[type=submit]:hover {
-    background-color: #024a6b;
-    transition: all 1s;
-  }
-  
-  
-  .container {
-    background-color: #f2f2f2;
-    padding: 10px;
-    
-  }
 
-
- 
-  .column {
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-    right: 10%;
-    position: center;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   
+  
+
  
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
@@ -167,25 +98,9 @@
   }
   
 
-
-
-  /* Kontakt form slut */
-
-/* Footer */
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-
-
-/* 
-.lit-button {
-  background-color: rgb(8, 0, 255);
-
-}
-.lit-button:hover {
-  background-color: rgb(8, 0, 255);
-
-} */
