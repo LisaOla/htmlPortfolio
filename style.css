@@ -46,24 +46,46 @@
   color: white;
 }
 
+.filmscontainer {
+  padding-bottom: 700px;
 
+
+  margin-bottom: 1000px;
+
+
+}
 .main-section {
   float: left;
   width: 70%;
+  background-color: white;
+
 }
 .aside {
   float: right;
   width: 25%;
+  background-color: white;
+
 }
 
 .commingmovie {
   background-color: white;
-  width: 100%;
+
 }
 
 
 
-  /* Kontakt form */
+.contactuscontainer {
+  padding: 200px;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+  background-color: black;
+
+
+
+}
+  
+
 
   input[type=text], select, textarea, input {
     width: 100%;
@@ -77,9 +99,6 @@
     
    
   }
-
-  
-  
 
  
   @media screen and (max-width: 600px) {
